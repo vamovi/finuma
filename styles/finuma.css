@@ -1,4 +1,6 @@
-/* Finuma: colores de marca (tomados de la plantilla de Crezco) */
+/* Finuma: colores y tipografía de marca (base: plantilla de Crezco) */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap");
+
 :root {
   --finuma-verde: #173A2B;        /* principal: titulares, botones, pie */
   --finuma-verde-tinta: #14281F;  /* texto */
@@ -12,5 +14,7 @@
   --color-primario: var(--finuma-verde);
   --color-acento: var(--finuma-coral);
 
-  --fuente-marca: "Outfit", "Lexend", system-ui, sans-serif;
+  --fuente-marca: "Outfit", system-ui, sans-serif;
+  --fuente-peso-titular: 700;
+  --fuente-peso-texto: 400;
 }
