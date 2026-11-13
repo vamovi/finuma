@@ -6,6 +6,9 @@ Financiación de máquinas de ordeño para productores lecheros en Colombia.
 
 - `styles/finuma.css`: colores de marca como variables CSS.
 - `brand/paleta.svg`: paleta de colores.
+- `brand/board.png`: tablero de marca.
+- `brand/logo.png`: logo y variantes.
+- `brand/aplicaciones.png`: aplicaciones (web, WhatsApp, volante, tarjetas, gorra, sticker).
 - `scripts/generar_marca.py`: genera el tablero de marca, el logo y las aplicaciones con la API de imágenes de OpenAI. Lee `OPENAI_API_KEY` del entorno y guarda las imágenes en `brand/`.
 
 ```bash
