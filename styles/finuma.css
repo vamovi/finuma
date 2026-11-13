@@ -1,0 +1,16 @@
+/* Finuma: colores de marca (tomados de la plantilla de Crezco) */
+:root {
+  --finuma-verde: #173A2B;        /* principal: titulares, botones, pie */
+  --finuma-verde-tinta: #14281F;  /* texto */
+  --finuma-coral: #F27B75;        /* banda de acento */
+  --finuma-coral-intenso: #EA6662;/* punto, barras de requisitos */
+  --finuma-crema: #F9F9F7;        /* fondo */
+  --finuma-linea: #D9DBD6;        /* separadores */
+
+  --color-fondo: var(--finuma-crema);
+  --color-texto: var(--finuma-verde-tinta);
+  --color-primario: var(--finuma-verde);
+  --color-acento: var(--finuma-coral);
+
+  --fuente-marca: "Outfit", "Lexend", system-ui, sans-serif;
+}
