@@ -18,3 +18,11 @@
   --fuente-peso-titular: 700;
   --fuente-peso-texto: 400;
 }
+
+/* Rutas creativas en evaluación (brief creativo v1). Todas parten de la paleta de Crezco. */
+:root {
+  --finuma-arena: #F1E8DA;        /* solo ruta B · Diálogo: fondos cálidos */
+}
+[data-ruta="a"] { --color-primario: var(--finuma-verde);  --color-acento: var(--finuma-coral); }
+[data-ruta="b"] { --color-primario: var(--finuma-coral);  --color-acento: var(--finuma-verde); --color-fondo: var(--finuma-arena); }
+[data-ruta="c"] { --color-primario: var(--finuma-verde-tinta); --color-acento: var(--finuma-coral-intenso); }

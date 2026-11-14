@@ -4,6 +4,9 @@ Financiación de inversiones productivas a partir del conocimiento de cada negoc
 
 ## Marca
 
+- `brand/rutas/`: tres rutas creativas (Ganchos, Diálogo, Monograma f) con tableros y pruebas funcionales. Ver `brand/rutas/README.md`.
+- `scripts/generar_rutas.py`: genera el tablero de cada ruta.
+
 - `styles/finuma.css`: colores de marca como variables CSS.
 - `brand/paleta.svg`: paleta de colores.
 - `brand/board.png`: tablero de marca.
