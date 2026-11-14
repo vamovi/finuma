@@ -57,3 +57,13 @@
 [data-ruta="oficio"]  { --color-primario: var(--v3-oficio-tierra); --color-acento: var(--v3-oficio-azafran); --color-fondo: var(--v3-oficio-hueso); --color-texto: var(--v3-oficio-tierra); --fuente-marca: "Fraunces", Georgia, serif; --fuente-texto: "Work Sans", system-ui, sans-serif; }
 [data-ruta="umbral"]  { --color-primario: var(--v3-umbral-berenjena); --color-acento: var(--v3-umbral-luz); --color-fondo: var(--v3-umbral-lino); --color-texto: var(--v3-umbral-tinta); --fuente-marca: "Plus Jakarta Sans", system-ui, sans-serif; --fuente-texto: "Plus Jakarta Sans", system-ui, sans-serif; }
 [data-ruta="cuentas"] { --color-primario: var(--v3-cuentas-grafito); --color-acento: var(--v3-cuentas-cobalto); --color-fondo: var(--v3-cuentas-papel); --color-texto: var(--v3-cuentas-grafito); --fuente-marca: "IBM Plex Sans", system-ui, sans-serif; --fuente-texto: "IBM Plex Sans", system-ui, sans-serif; --fuente-cifras: "IBM Plex Mono", monospace; }
+
+/* EXPLORATORIO · Identidad v4 (brand/identidad-v4): Trama, Recorrido, Firma. No aprobado; no usar en producción. */
+:root {
+  --v4-trama-indigo: #23395B; --v4-trama-oxido: #C65D3B; --v4-trama-algodon: #F3EEE4; --v4-trama-mostaza: #E2B94B; --v4-trama-tinta: #1E2430;
+  --v4-recorrido-petroleo: #0E4A4F; --v4-recorrido-lima: #C8E06B; --v4-recorrido-niebla: #F4F7F2; --v4-recorrido-salvia: #8FB8B2; --v4-recorrido-tinta: #0E2A2D;
+  --v4-firma-vino: #6B1E2E; --v4-firma-papel: #F5F1E8; --v4-firma-tinta: #1B1B1F; --v4-firma-rosa: #E9C6C0; --v4-firma-lino: #B9A88F;
+}
+[data-ruta="trama"]     { --color-primario: var(--v4-trama-indigo); --color-acento: var(--v4-trama-oxido); --color-fondo: var(--v4-trama-algodon); --color-texto: var(--v4-trama-tinta); --fuente-marca: "Bricolage Grotesque", system-ui, sans-serif; --fuente-texto: "Bricolage Grotesque", system-ui, sans-serif; }
+[data-ruta="recorrido"] { --color-primario: var(--v4-recorrido-petroleo); --color-acento: var(--v4-recorrido-lima); --color-fondo: var(--v4-recorrido-niebla); --color-texto: var(--v4-recorrido-tinta); --fuente-marca: "Figtree", system-ui, sans-serif; --fuente-texto: "Figtree", system-ui, sans-serif; }
+[data-ruta="firma"]     { --color-primario: var(--v4-firma-vino); --color-acento: var(--v4-firma-rosa); --color-fondo: var(--v4-firma-papel); --color-texto: var(--v4-firma-tinta); --fuente-marca: "Instrument Serif", Georgia, serif; --fuente-texto: "Inter", system-ui, sans-serif; }
