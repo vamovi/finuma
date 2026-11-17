@@ -39,3 +39,7 @@ python3 scripts/generar_marca.py board      # solo uno
 | Línea | `#D9DBD6` | Separadores |
 
 Tipografía: Outfit (Google Fonts, licencia OFL). Titulares 700, texto 400.
+
+## Exploración de lettering (pendiente de elección)
+
+Tres direcciones de logotipo tipográfico propio en `brand/lettering/` (Enlace, Cruce, Eco), solo con verde `#173A2B`, coral `#F27B75` y blanco. Son propuestas conceptuales; la elegida necesitará dibujo vectorial y ajuste óptico. Ver `brand/lettering/README.md`.

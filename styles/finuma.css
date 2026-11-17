@@ -93,3 +93,17 @@
   --color-destacado: var(--finuma-coral-intenso);       /* solo gráficos o texto grande */
   --color-separador: var(--finuma-verde-tinta);
 }
+
+/* Exploración de lettering (brand/lettering): solo verde oscuro, coral y blanco. Pendiente de elección. */
+:root {
+  --finuma-blanco: #FFFFFF;
+}
+[data-marca="lettering"] {
+  --color-fondo: var(--finuma-blanco);
+  --color-texto: var(--finuma-verde);
+  --color-titular: var(--finuma-verde);
+  --color-boton: var(--finuma-verde);
+  --color-boton-texto: var(--finuma-blanco);
+  --color-acento: var(--finuma-coral);
+  --color-texto-sobre-acento: var(--finuma-verde);   /* verde sobre coral 4,7:1; nunca blanco sobre coral (2,7:1) */
+}
