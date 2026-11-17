@@ -1,0 +1,25 @@
+/* tami · dirección Ritmo: solo verde oscuro, coral y blanco. */
+:root {
+  --tami-verde: #173A2B;
+  --tami-coral: #F27B75;
+  --tami-blanco: #FFFFFF;
+
+  --color-fondo: var(--tami-blanco);
+  --color-texto: var(--tami-verde);
+  --color-titular: var(--tami-verde);
+  --color-boton: var(--tami-verde);
+  --color-boton-texto: var(--tami-blanco);
+  --color-acento: var(--tami-coral);
+  --color-texto-sobre-acento: var(--tami-verde);   /* verde sobre coral 4,7:1; nunca blanco sobre coral (2,7:1) */
+
+  --tami-punto: var(--tami-coral);                  /* punto de la i */
+  --tami-logo-min-punto: 32px;                      /* por debajo de este alto, logotipo entero en verde */
+
+  --fuente: "Outfit", system-ui, sans-serif;        /* tipografía de apoyo (OFL) */
+}
+
+body {
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente);
+}
