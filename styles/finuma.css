@@ -107,3 +107,17 @@
   --color-acento: var(--finuma-coral);
   --color-texto-sobre-acento: var(--finuma-verde);   /* verde sobre coral 4,7:1; nunca blanco sobre coral (2,7:1) */
 }
+
+/* Exploración de lettering "tami" (brand/tami): solo verde oscuro, coral y blanco. Pendiente de elección. */
+[data-marca="tami"] {
+  --tami-verde: #173A2B;
+  --tami-coral: #F27B75;
+  --tami-blanco: #FFFFFF;
+  --color-fondo: var(--tami-blanco);
+  --color-texto: var(--tami-verde);
+  --color-titular: var(--tami-verde);
+  --color-boton: var(--tami-verde);
+  --color-boton-texto: var(--tami-blanco);
+  --color-acento: var(--tami-coral);
+  --color-texto-sobre-acento: var(--tami-verde);   /* verde sobre coral 4,7:1; nunca blanco sobre coral (2,7:1) */
+}

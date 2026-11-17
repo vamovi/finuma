@@ -43,3 +43,7 @@ Tipografía: Outfit (Google Fonts, licencia OFL). Titulares 700, texto 400.
 ## Exploración de lettering (pendiente de elección)
 
 Tres direcciones de logotipo tipográfico propio en `brand/lettering/` (Enlace, Cruce, Eco), solo con verde `#173A2B`, coral `#F27B75` y blanco. Son propuestas conceptuales; la elegida necesitará dibujo vectorial y ajuste óptico. Ver `brand/lettering/README.md`.
+
+## Exploración de lettering "tami" (pendiente de elección)
+
+Tres direcciones de logotipo tipográfico propio para el nombre "tami" en `brand/tami/` (Puente, Ritmo, Eco), solo con verde, coral y blanco. Propuestas conceptuales; ver `brand/tami/README.md`.
