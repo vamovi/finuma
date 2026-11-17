@@ -1,7 +1,7 @@
 """Versiones alternativas del tablero de Finuma (v2: punto coral en la i; v3: barra de requisito + "nu").
 
 Mismo brief (finumabrief.md) y paleta que brand/marca. El avatar no usa la "f".
-Uso: python3 scripts/generar_marca_versiones.py v2|v3 [tablero] [aplicaciones]   (requiere OPENAI_API_KEY)
+Uso: python3 scripts/generar_marca_versiones.py v2|v3|v4 [tablero] [aplicaciones]   (requiere OPENAI_API_KEY)
 """
 import base64, json, os, subprocess, sys
 
@@ -10,9 +10,9 @@ BASE = '''Brand: "finuma", a Colombian company that finances tools and equipment
 Promise: "Te ayudamos a financiar el equipo que necesita tu negocio, con condiciones claras y pagos alineados con tus ingresos." Feeling: trustworthy, close and clear; speaks as an equal, without jargon, treating the client as capable of deciding. Spanish copy uses "tú".
 Never: cows, milk drops or farm symbols in the logo or identity system (farm photos are fine only in the first-product pieces); charity or pity; easy money; guaranteed approval or growth; handshake, piggy bank or dollar icons.
 The attached image is the exact logo sheet: {logo} Reproduce it exactly; never redesign it. The round avatar must never contain the letter "f".
-Exact palette, use only these: Verde #173A2B (headlines, buttons, footer), Tinta #14281F (text), Coral #F27B75 (accent band), Coral intenso #EA6662 (the period, requirement bars), Crema #F9F9F7 (background), Línea #D9DBD6 (separators).
-Typography: Outfit (bold geometric rounded sans) for headlines Outfit regular for text; tabular figures.
-Graphic resources: {recurso}, short vertical coral-intense bars marking requirements or conditions, a full-width coral band for one key message, thin #D9DBD6 rules.
+{paleta}
+Typography: Outfit (bold geometric rounded sans) for headlines{tipo_extra} Outfit regular for text; tabular figures.
+Graphic resources: {recurso}{extra}.
 Copy rules: when describing how it works, say that Finuma pays the supplier directly ("Finuma le paga directamente al proveedor"); never list document requirements or eligibility conditions (none are defined yet); never say "te pagamos".
 Text: very little, Spanish spelled correctly. Fictitious figures labeled "Datos ficticios"; all dates in 2027.'''
 
@@ -33,12 +33,24 @@ Create a premium applications mockup sheet, 2x3 grid on cream, clean gutters, re
 V = {
  "v2": dict(logo='lowercase bold geometric wordmark "finuma" in #173A2B whose letter i has a coral #EA6662 dot instead of a regular dot; the round avatar is a green circle with a cream rounded "i" stem and the coral dot above it.',
             recurso='the coral dot (from the i) used as a marker: bullet before key data, highlight on the current payment, dot at the end of key headlines'),
+ "v4": dict(logo='a symbol made of two half-discs facing each other with a thin gap, slightly offset vertically (left half coral #F27B75, right half green #173A2B on light backgrounds; coral and cream on the green avatar), followed by the lowercase bold geometric wordmark "finuma" in #173A2B. There is NO dot or period anywhere in the logo.',
+            recurso='the two half-discs used as a split frame (half photo, half color) and as two-column layouts for "lo que hace Finuma / lo que haces tú"; NO coral dots or periods at the end of headlines',
+            palette_override=True),
  "v3": dict(logo='a short thick vertical coral #EA6662 bar followed by the lowercase bold geometric wordmark "finuma" in #173A2B; the round avatar is a green circle with the same coral bar followed by cream lowercase "nu".',
             recurso='the vertical coral-intense bar (from the logo) placed before headlines and key data as a marker of what matters'),
 }
 
 def gen(ver, k):
-    prompt = (BASE + JOBS[k]).format(**V[ver])
+    v = dict(V[ver])
+    if v.pop("palette_override", False):
+        v.update(paleta="Exact palette, use ONLY these five colors and nothing else (no gray, no white): Verde #173A2B, Tinta #14281F, Coral #F27B75, Coral intenso #EA6662, Crema #F9F9F7. Text contrast rules: on coral backgrounds use Tinta or Verde text, NEVER cream or white text; on green use Crema text; separators in Tinta at low weight.",
+                 extra=", a full-width coral band with dark text for one key message", tipo_extra="")
+    else:
+        v.update(paleta="Exact palette, use only these: Verde #173A2B (headlines, buttons, footer), Tinta #14281F (text), Coral #F27B75 (accent band), Coral intenso #EA6662 (the period, requirement bars), Crema #F9F9F7 (background), Línea #D9DBD6 (separators).",
+                 extra=", short vertical coral-intense bars marking requirements or conditions, a full-width coral band for one key message, thin #D9DBD6 rules", tipo_extra="")
+    prompt = (BASE + JOBS[k]).format(**v)
+    if ver == "v4":
+        prompt = prompt.replace(' with coral period', '').replace('"Aa" and "0123456789" in Outfit with the coral period', '"Aa" and "0123456789" in Outfit').replace('palette: six swatches', 'palette: five swatches')
     cmd = ["curl", "-sS", "https://api.openai.com/v1/images/edits", "-H", "Authorization: Bearer " + KEY,
            "-F", "model=gpt-image-2", "--form-string", "prompt=" + prompt, "-F", "size=1536x1024",
            "-F", "quality=high", "-F", "image[]=@brand/marca-%s/logo.png" % ver]

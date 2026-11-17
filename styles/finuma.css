@@ -77,3 +77,19 @@
 [data-ruta="trama"]     { --color-primario: var(--v4-trama-indigo); --color-acento: var(--v4-trama-oxido); --color-fondo: var(--v4-trama-algodon); --color-texto: var(--v4-trama-tinta); --fuente-marca: "Bricolage Grotesque", system-ui, sans-serif; --fuente-texto: "Bricolage Grotesque", system-ui, sans-serif; }
 [data-ruta="recorrido"] { --color-primario: var(--v4-recorrido-petroleo); --color-acento: var(--v4-recorrido-lima); --color-fondo: var(--v4-recorrido-niebla); --color-texto: var(--v4-recorrido-tinta); --fuente-marca: "Figtree", system-ui, sans-serif; --fuente-texto: "Figtree", system-ui, sans-serif; }
 [data-ruta="firma"]     { --color-primario: var(--v4-firma-vino); --color-acento: var(--v4-firma-rosa); --color-fondo: var(--v4-firma-papel); --color-texto: var(--v4-firma-tinta); --fuente-marca: "Instrument Serif", Georgia, serif; --fuente-texto: "Inter", system-ui, sans-serif; }
+
+/* Versión 4 (brand/marca-v4): solo cinco colores, sin Línea. Símbolo de dos mitades, sin punto coral. */
+[data-marca="v4"] {
+  --color-fondo: var(--finuma-crema);
+  --color-texto: var(--finuma-verde-tinta);
+  --color-titular: var(--finuma-verde);
+  --color-boton: var(--finuma-verde);
+  --color-boton-texto: var(--finuma-crema);
+  --color-pie: var(--finuma-verde);
+  --color-banda: var(--finuma-coral);
+  --color-texto-sobre-banda: var(--finuma-verde-tinta); /* nunca crema sobre coral: 2,5:1 */
+  --color-simbolo-a: var(--finuma-coral);
+  --color-simbolo-b: var(--finuma-verde);
+  --color-destacado: var(--finuma-coral-intenso);       /* solo gráficos o texto grande */
+  --color-separador: var(--finuma-verde-tinta);
+}
