@@ -20,3 +20,5 @@ Variables en `styles/finuma.css`, bloque `[data-marca="tami"]`.
 ## Importante
 
 Las imágenes son **propuestas conceptuales** generadas con la API de imágenes de OpenAI (`scripts/generar_lettering_tami.py`). No son una fuente comercial. El logotipo elegido necesitará **dibujo vectorial y ajuste óptico** antes de su entrega final. El brand kit completo se desarrollará después de elegir dirección.
+
+**Elegida: Ritmo.** El brand kit está en `kit/`.
