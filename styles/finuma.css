@@ -1,4 +1,4 @@
-/* Finuma: colores y tipografía de marca (base: plantilla de Crezco) */
+/* Finuma: colores y tipografía de marca (paleta oficial de la imagen de Valen; brief finumabrief.md). Ver brand/marca/. */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap");
 
 :root {
@@ -13,6 +13,16 @@
   --color-texto: var(--finuma-verde-tinta);
   --color-primario: var(--finuma-verde);
   --color-acento: var(--finuma-coral);
+
+  /* Usos de la paleta */
+  --color-titular: var(--finuma-verde);
+  --color-boton: var(--finuma-verde);
+  --color-boton-texto: var(--finuma-crema);
+  --color-pie: var(--finuma-verde);
+  --color-banda: var(--finuma-coral);
+  --color-punto: var(--finuma-coral-intenso);       /* punto del logo y de titulares */
+  --color-barra-requisito: var(--finuma-coral-intenso);
+  --color-separador: var(--finuma-linea);
 
   --fuente-marca: "Outfit", system-ui, sans-serif;
   --fuente-peso-titular: 700;

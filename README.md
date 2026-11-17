@@ -4,6 +4,8 @@ Financiación de inversiones productivas a partir del conocimiento de cada negoc
 
 ## Marca
 
+- **`brand/marca/`: marca vigente** (brief `finumabrief.md` + paleta oficial): logo, paleta, tablero y aplicaciones. Ver `brand/marca/README.md`.
+
 - `brand/identidad-v4/`: tres direcciones desde cero (exploración): Trama, Recorrido y Firma. Ideas y comparación en `brand/identidad-v4/direcciones.md`.
 
 - `brand/identidad-v3/`: identidad desde cero (exploración): territorios Oficio, Umbral y Cuentas de dos. Estrategia, comparación y recomendación en `brand/identidad-v3/estrategia.md`.
